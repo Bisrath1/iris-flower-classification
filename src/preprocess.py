@@ -1,10 +1,13 @@
 import pandas as pd
 
+
+
 def split_features_labels(df: pd.DataFrame):
     """Splits features (X) and target labels (y) from the dataset."""
-    X = df.drop(columns=["Species"])
+    X = df.drop(columns=["Species", "Id"])  # Exclude Id
     y = df["Species"]
     return X, y
+
 
 
 from sklearn.model_selection import train_test_split
