@@ -1,19 +1,17 @@
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-*.swp
+*.sqlite3
 
-# Virtual Environment
+# Environments
 venv/
-.env/
+.env
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Data
-data/
-
-# System
+# Others
+*.log
 .DS_Store
